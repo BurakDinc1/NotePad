@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ArkaPlanRengi"
+    tools:context=".Activity.NotOlusturActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/not_olustur_appbar"
+            layout="@layout/bar_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/AppBarRengi"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageButton
+                android:id="@+id/not_arka_plan_rengi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/auth_button_design"
+                android:padding="5dp"
+                android:src="@drawable/ic_renk_paleti" />
+
+            <ImageButton
+                android:id="@+id/not_yazi_rengi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/auth_button_design"
+                android:padding="5dp"
+                android:src="@drawable/ic_yazi_rengi" />
+
+            <ImageButton
+                android:id="@+id/not_kalin_yazi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/auth_button_design"
+                android:padding="5dp"
+                android:src="@drawable/ic_kalin_yazi" />
+
+            <ImageButton
+                android:id="@+id/not_egik_yazi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/auth_button_design"
+                android:padding="5dp"
+                android:src="@drawable/ic_egik_yazi" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/not_olustur_baslik_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_shape"
+            android:gravity="start"
+            android:hint="Başlık giriniz..."
+            android:maxLength="@integer/baslik_uzunluk"
+            android:padding="10dp"
+            android:textColor="@color/yaziRengi"
+            android:textColorHint="@color/gri"
+            android:textCursorDrawable="@drawable/textcursor"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/not_olustur_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_shape"
+            android:gravity="start"
+            android:hint="Notunuzu giriniz..."
+            android:maxLength="@integer/not_uzunluk"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/yaziRengi"
+            android:textColorHint="@color/gri"
+            android:textCursorDrawable="@drawable/textcursor"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/not_kayit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/auth_button_design"
+        android:padding="15dp"
+        android:src="@drawable/ic_kayit" />
+
+</RelativeLayout>

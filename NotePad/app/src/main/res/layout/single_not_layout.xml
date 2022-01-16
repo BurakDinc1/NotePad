@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/arkadaslarcardview"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/AppBarRengi"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cardview_not_baslik"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/beyaz"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_margin="3dp"/>
+
+            <TextView
+                android:id="@+id/cardview_not_icerik"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/beyaz"
+                android:textSize="17sp"
+                android:layout_margin="3dp"/>
+
+            <TextView
+                android:id="@+id/cardview_not_tarih"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_margin="3dp"
+                android:textColor="@color/gri"
+                android:textSize="12sp"
+                android:text="11.07.1998 10:30"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:layout_margin="3dp"
+                android:orientation="horizontal"
+                android:layout_weight="3">
+
+                <ImageButton
+                    android:id="@+id/cardview_not_duzenle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_edit"
+                    android:background="@drawable/auth_button_design"/>
+
+                <ImageButton
+                    android:id="@+id/cardview_not_paylas"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:layout_margin="3dp"
+                    android:src="@drawable/ic_share"
+                    android:background="@drawable/auth_button_design"/>
+
+                <ImageButton
+                    android:id="@+id/cardview_not_sil"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_delete"
+                    android:background="@drawable/auth_button_design"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

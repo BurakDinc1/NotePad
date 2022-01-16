@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/AppBarRengi</item>
+        <item name="colorPrimaryDark">@color/statusbarcolor</item>
+        <item name="colorAccent">@color/ArkaPlanRengi</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/statusbarcolor</item>
+    </style>
+    <style parent="Theme.AppCompat.Light" name="MenuStyle">
+</style>
+
+</resources>
